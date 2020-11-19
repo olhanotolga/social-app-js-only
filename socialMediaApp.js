@@ -128,3 +128,37 @@ class SocialMediaApp {
 	}
 }
 
+// Call stack
+
+const veryUniqueApp = new SocialMediaApp();
+
+
+const post1 = veryUniqueApp.addNewPost({className: Post, name: 'Jill', title: 'Let me explain JS expressions', text: 'A JS expression is a piece of code that always evaluates to something, resolves in a single value...'});
+post1.likePost();
+post1.dislikePost();
+post1.likePost();
+post1.likePost();
+post1.addNewComment({name: 'Marc', text: 'Brilliant!'});
+post1.addNewComment({name: 'Joe', text: 'women cant code'});
+post1.addNewComment({name: 'Julia', text: 'Thanks! Please write about statements too!'});
+post1.updatePost({title: 'JS expressions'});
+// post1.updateComment({id: 1, text: 'trololo'});
+// post1.deleteComment({id: 1});
+// console.log(post1.comments);
+// post1.displayPost();
+
+const post2 = veryUniqueApp.addNewPost({className: Post, name: 'Mary', title: 'Mary had a little lamb', text: 'It\'s not true!'})
+post2.likePost();
+post2.likePost();
+post2.likePost();
+post2.addNewComment({name: 'Marcy', text: 'I feel ya'});
+post2.addNewComment({name: 'Jed', text: 'trololo'});
+
+// veryUniqueApp.deletePost({id: 1});
+
+const post3 = veryUniqueApp.addNewPost({className: Post, name: 'Bob', title: 'Test', text: 'My first post'});
+console.log(post3);
+// veryUniqueApp.deletePost({id: 2});
+
+veryUniqueApp.displayPosts();
+
