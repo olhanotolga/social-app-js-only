@@ -34,6 +34,8 @@ a SM app has **methods**:
 
 ## Using the app / Calling methods
 
+**! See the `call-stack` branch for live examples**
+
 ### 1. Create a social app
 
 `new SocialMediaApp();` returns an instance of a social app. e.g.
