@@ -113,7 +113,7 @@ class SocialMediaApp {
 			}
 		}
 		newPost.id = generateNewID();
-		this.posts.push(newPost);
+		this.posts = [...this.posts, newPost];
 		return newPost;
 	}
 
